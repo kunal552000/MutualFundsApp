@@ -1,0 +1,761 @@
+SELECT * FROM portfolio_manager;
+INSERT INTO PORTFOLIO_MANAGER  (EMAIL , password, pm_name)
+VALUES ('pm1@pm.com', 'pm1', 'Anshul');
+
+SELECT * FROM investor;
+INSERT INTO investor (EMAIL,investor_name,password)
+VALUES ('kunal@investor.com','Kunal','Kunal123');
+
+SELECT * FROM shares;
+SELECT * FROM PREV_PRICE_DETAILS;
+
+INSERT INTO SHARES(business_category,closing_price,share_name)
+values('Banking',410.0,'State Bank of India');
+
+INSERT INTO SHARES(business_category,closing_price,share_name)
+values('Banking',1410.0,'HDFC');
+
+INSERT INTO SHARES(business_category,closing_price,share_name)
+values('IT Services',3800.0,'TCS');
+
+INSERT INTO SHARES(business_category,closing_price,share_name)
+values('Conglomerate',2550.0,'Reliance');
+
+INSERT INTO SHARES(business_category,closing_price,share_name)
+values('Banking',710.0,'ICICI');
+
+INSERT INTO SHARES(business_category,closing_price,share_name)
+values('Consumer Goods',2480.0,'Hindustan Unilever');
+
+INSERT INTO SHARES(business_category,closing_price,share_name)
+values('Automobile',7100.0,'Maruti Suzuki');
+
+INSERT INTO SHARES(business_category,closing_price,share_name)
+values('Consumer Goods',1620.0,'Titan');
+
+INSERT INTO SHARES(business_category,closing_price,share_name)
+values('Banking',760.0,'Axis Bank');
+
+INSERT INTO SHARES(business_category,closing_price,share_name)
+values('Cement',1850.0,'ACC');
+
+INSERT INTO SHARES(business_category,closing_price,share_name)
+values('Chemicals',2050.0,'Pidilite Industries');
+
+
+INSERT INTO SHARES(business_category,closing_price,share_name)
+values('Food & Beverage',18100.0,'Nestle');
+
+
+INSERT INTO SHARES(business_category,closing_price,share_name)
+values('Automobile',4100.0,'Bajaj');
+
+
+INSERT INTO SHARES(business_category,closing_price,share_name)
+values('Automobile',850.0,'Mahindra');
+
+
+INSERT INTO SHARES(business_category,closing_price,share_name)
+values('Cement',6410.0,'Ultratech');
+
+
+INSERT INTO SHARES(business_category,closing_price,share_name)
+values('Chemicals',2410.0,'Asian Paints');
+
+
+INSERT INTO SHARES(business_category,closing_price,share_name)
+values('Utilities',510.0,'Power Grid');
+
+
+INSERT INTO SHARES(business_category,closing_price,share_name)
+values('IT Services',510.0,'Wipro');
+
+INSERT INTO SHARES(business_category,closing_price,share_name)
+values('Mining',155.0,'Coal India');
+
+INSERT INTO SHARES(business_category,closing_price,share_name)
+values('Financial Services',4000.0,'Oracle');
+
+
+SELECT * FROM shares;
+SELECT* FROM PREV_PRICE_DETAILS;
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(1,'405.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(1,'407.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(1,'412.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(1,'408.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(1,'415.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(1,'417.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(1,'407.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(1,'405.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(1,'412.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(1,'418.00');
+
+SELECT * FROM PREV_PRICE_DETAILS ;
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(2,'1418.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(2,'1415.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(2,'1419.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(2,'1405.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(2,'1407.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(2,'1415.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(2,'1412.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(2,'1408.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(2,'1413.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(2,'1410.00');
+
+SELECT  * FROM PREV_PRICE_DETAILS;
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(3,'3780.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(3,'3777.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(3,'3781.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(3,'3779.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(3,'3790.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(3,'3792.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(3,'3784.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(3,'3787.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(3,'3795.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(3,'3800.00');
+
+SELECT * FROM PREV_PRICE_DETAILS;
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(4,'2520.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(4,'2522.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(4,'2525.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(4,'2527.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(4,'2525.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(4,'2532.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(4,'2535.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(4,'2545.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(4,'2555.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(4,'2550.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(5,'705.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(5,'712.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(5,'707.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(5,'714.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(5,'721.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(5,'717.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(5,'712.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(5,'711.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(5,'725.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(5,'710.00');
+
+SELECT * FROM PREV_PRICE_DETAILS;
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(6,'2495.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(6,'2487.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(6,'2485.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(6,'2499.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(6,'2480.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(6,'2482.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(6,'2485.00');  
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(6,'2472.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(6,'2475.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(6,'2480.00');
+
+
+SELECT * FROM PREV_PRICE_DETAILS ;
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(7,'7050.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(7,'7053.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(7,'7047.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(7,'7041.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(7,'7061.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(7,'7067.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(7,'7068.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(7,'7087.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(7,'7084.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(7,'7100.00');
+
+SELECT * FROM PREV_PRICE_DETAILS;
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(8,'1610.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(8,'1612.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(8,'1617.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(8,'1605.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(8,'1603.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(8,'1600.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(8,'1613.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(8,'1622.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(8,'1627.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(8,'1620.00');
+
+SELECT * FROM PREV_PRICE_DETAILS;
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(9,'755.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(9,'753.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(9,'755.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(9,'757.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(9,'765.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(9,'745.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(9,'747.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(9,'753.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(9,'751.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(9,'760.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(10,'1830.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(10,'1822.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(10,'1835.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(10,'1832.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(10,'1843.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(10,'1840.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(10,'1857.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(10,'1855.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(10,'1848.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(10,'1850.00');
+
+
+SELECT *FROM PREV_PRICE_DETAILS;
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(11,'2030.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(11,'2034.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(11,'2022.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(11,'2023.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(11,'2035.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(11,'2042.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(11,'2041.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(11,'2027.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(11,'2047.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(11,'2050.00');
+
+SELECT * FROM PREV_PRICE_DETAILS
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(12,'18050.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(12,'18056.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(12,'18051.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(12,'18055.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(12,'18075.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(12,'18150.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(12,'18120.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(12,'18000.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(12,'18090.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(12,'18100.00');
+
+SELECT * FROM PREV_PRICE_DETAILS
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(13,'4030.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(13,'4036.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(13,'4031.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(13,'4050.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(13,'4040.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(13,'4078.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(13,'4085.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(13,'4083.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(13,'4094.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(13,'4100.00');
+
+
+SELECT * FROM PREV_PRICE_DETAILS 
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(14,'830.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(14,'822.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(14,'834.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(14,'832.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(14,'834.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(14,'843.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(14,'827.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(14,'838.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(14,'843.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(14,'850.00');
+
+SELECT * FROM PREV_PRICE_DETAILS;
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(15,'6030.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(15,'6012.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(15,'6070.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(15,'6105.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(15,'6173.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(15,'6127.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(15,'6230.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(15,'6340.00');
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(15,'6306.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(15,'6410.00');
+
+SELECT * FROM PREV_PRICE_DETAILS;
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(16,'2520.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(16,'2507.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(16,'2472.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(16,'2432.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(16,'2398.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(16,'2312.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(16,'2399.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(16,'2406.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(16,'2407.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(16,'2410.00');
+
+SELECT * FROM PREV_PRICE_DETAILS
+
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(17,'503.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(17,'497.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(17,'504.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(17,'512.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(17,'532.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(17,'497.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(17,'523.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(17,'503.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(17,'513.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(17,'510.00');
+
+SELECT * FROM PREV_PRICE_DETAILS 
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(18,'505.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(18,'502.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(18,'512.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(18,'543.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(18,'523.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(18,'512.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(18,'504.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(18,'514.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(18,'525.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(18,'510.00');
+
+
+SELECT * FROM PREV_PRICE_DETAILS
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(19,'152.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(19,'145.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(19,'132.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(19,'145.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(19,'164.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(19,'153.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(19,'153.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(19,'156.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(19,'148.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(19,'155.00');
+
+SELECT * FROM PREV_PRICE_DETAILS;
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(20,'3962.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(20,'3945.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(20,'3956.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(20,'4062.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(20,'4082.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(20,'4024.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(20,'3997.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(20,'4012.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(20,'3987.00');
+
+INSERT INTO PREV_PRICE_DETAILS(ENTITY_ID,price_detail)
+values(20,'4000.00');
+
+SELECT * FROM PREV_PRICE_DETAILS 
+
+SELECT * FROM SHARES s ;
+
+SELECT * FROM PORTFOLIO_MANAGER pm ;
+SELECT * FROM INVESTOR i;
+

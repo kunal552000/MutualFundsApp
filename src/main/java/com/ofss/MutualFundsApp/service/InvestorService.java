@@ -18,7 +18,7 @@ public class InvestorService {
 		try {
 			System.out.println(email + " " + password);
 			Investor investor1 = investorRepo.findByUserNamePass(email, password);
-			return true;
+			return investor1 != null;
 		}
 		catch(Exception e){
 			System.out.println(e.getMessage());

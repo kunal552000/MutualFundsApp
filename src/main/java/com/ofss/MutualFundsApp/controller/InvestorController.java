@@ -23,9 +23,9 @@ public class InvestorController {
 	public ResponseEntity<String>  investorLogin(@RequestBody InvestorDTO i)
 	{
 		if(investorService.checkLogin(i.getEmail(), i.getPassword()) == true)
-			return new ResponseEntity<String>("Sucessfully logged in",HttpStatus.OK);
+			return new ResponseEntity<>("Sucessfully logged in",HttpStatus.OK);
 		
-		return new ResponseEntity<String>("LoginFailed",HttpStatus.NOT_FOUND);
+		return new ResponseEntity<>("LoginFailed",HttpStatus.NOT_FOUND);
 	}
 	
 }

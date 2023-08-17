@@ -17,7 +17,7 @@ public class PMService {
 		try {
 			System.out.println(email + " " + password);
 			PM pm1 = pmRepo.findByUserNamePass(email, password);
-			return true;
+			return pm1 != null;
 		}
 		catch(Exception e){
 			System.out.println(e.getMessage());

@@ -31,9 +31,9 @@ public class PMController {
 	public ResponseEntity<String>  pmLogin(@RequestBody PmDTO p)
 	{
 		if(pmService.checkLogin(p.getEmail(), p.getPassword()) == true)
-			return new ResponseEntity<String>("Sucessfully logged in",HttpStatus.OK);
-		
-		return new ResponseEntity<String>("LoginFailed",HttpStatus.NOT_FOUND);
+			return new ResponseEntity<>("Sucessfully logged in",HttpStatus.OK);
+		else
+		return new ResponseEntity<>("LoginFailed",HttpStatus.NOT_FOUND);
 	}
 	
 	@GetMapping("/addMF")

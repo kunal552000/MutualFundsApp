@@ -39,12 +39,18 @@ public class MutualFundService {
 	    );
 		
 		for(Shares s : existingShares)
+		{
 			System.out.println("Inside existing shares " + s.getShareId());
+		//	mfRepo.save(entities)
+		}
+			
 		
 		MutualFund mutualFund = new MutualFund();
 		mutualFund.setMfName(mfDTO.getMfName());
 		
-		calculateAndSetValues(mfDTO.getIncludedShares(), existingShares);
+		mutualFund.setExpenseRatio((float) 0.1);
+		//mutualFund.setIncludedShares(existingShares);
+		calculateAndSetValues(mfDTO.getIncludedShares(), existingShares,mutualFund);
 		
 		try {
 			mfRepo.save(mutualFund);
@@ -56,7 +62,7 @@ public class MutualFundService {
 		}
 	}
 	
-	private void calculateAndSetValues(List<SharesRequest> includedShares, List<Shares> existingShares) {
+	private void calculateAndSetValues(List<SharesRequest> includedShares, List<Shares> existingShares,MutualFund mutualFund) {
 	    float totalValue = 0;
 	    int totalUnits = 0;
 
@@ -67,8 +73,8 @@ public class MutualFundService {
 	            .orElse(null);
 
 	        if (share != null) {
-	            totalValue += share.getClosingPrice() * shareRequest.getUnits();
-	            totalUnits += shareRequest.getUnits();
+	            totalValue += share.getClosingPrice() * shareRequest.getNoOfUnits();
+	            totalUnits += shareRequest.getNoOfUnits();
 	        }
 	    }
 
@@ -77,6 +83,12 @@ public class MutualFundService {
 	    }
 
 	    float nav = totalValue / totalUnits;
+	    System.out.println("Nav is " + nav);
+	    
+	    mutualFund.setNav(nav);
+	    
+	
+	    
 	    
 	}
 	

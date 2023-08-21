@@ -6,6 +6,11 @@
 	<artifactId>MutualFundsApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>MutualFundsApp</name>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+	</properties>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -14,6 +19,16 @@
 	</parent>
 
 	<dependencies>
+	<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.9.2</version> <!-- Use the latest version -->
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.9.2</version> <!-- Use the latest version -->
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>

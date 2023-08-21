@@ -1,10 +1,17 @@
 package com.ofss.MutualFundsApp.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.CollectionTable;
+import javax.persistence.Column;
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.JoinColumn;
 
 @Entity
 @Table(name = "investor")
@@ -17,16 +24,22 @@ public class Investor {
 	private String email;
 	private String password;
 	
-	public Investor() {
+	@ElementCollection
+	@CollectionTable(name = "investments", joinColumns = @JoinColumn(name = "investorId"))
+	@Column(name = "mutualFund_id")
+	private List<Integer> investments = new ArrayList<>();
+	
+    public Investor() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Investor(int investorId, String investorName, String email, String password) {
+	public Investor(int investorId, String investorName, String email, String password, List<Integer> investments) {
 		super();
 		this.investorId = investorId;
 		this.investorName = investorName;
 		this.email = email;
 		this.password = password;
+		this.investments = investments;
 	}
 
 	public int getInvestorId() {
@@ -61,11 +74,21 @@ public class Investor {
 		this.password = password;
 	}
 
+	public List<Integer> getInvestments() {
+		return investments;
+	}
+
+	public void setInvestments(List<Integer> investments) {
+		this.investments = investments;
+	}
+
 	@Override
 	public String toString() {
 		return "Investor [investorId=" + investorId + ", investorName=" + investorName + ", email=" + email
-				+ ", password=" + password + "]";
+				+ ", password=" + password + ", investments=" + investments + "]";
 	}
+    
+    
 	
 	
 	

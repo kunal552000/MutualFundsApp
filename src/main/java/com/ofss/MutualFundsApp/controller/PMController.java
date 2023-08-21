@@ -36,7 +36,7 @@ public class PMController {
 		return new ResponseEntity<>("LoginFailed",HttpStatus.NOT_FOUND);
 	}
 	
-	@GetMapping("/addMF")
+	@GetMapping("/viewAllStocks")
 	public ResponseEntity<List<Shares>> addMF()
 	{
 		 List<Shares> allShares = shareService.showShares();

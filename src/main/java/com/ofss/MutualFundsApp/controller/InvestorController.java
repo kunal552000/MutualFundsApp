@@ -31,7 +31,7 @@ public class InvestorController {
 		return new ResponseEntity<>("LoginFailed",HttpStatus.NOT_FOUND);
 	}
 	
-	@PostMapping("buyAFund")
+	@PostMapping("/buyAFund")
     public ResponseEntity<String> buyMutualFund(@RequestBody BuyingDTO b)
 	{
         Investor investor = investorService.buyMutualFund(b.getInvestorId(), b.getMfId());

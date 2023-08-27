@@ -52,7 +52,7 @@ public class MutualFundsAppApplication {
 	private ApiInfo apiDetails()
 	{
 		
-		return new ApiInfo("Cutomer REST API",
+		return new ApiInfo("Mutual Funds REST API",
 				"crud opertions customer",
 				"1.0",
 				"Free APIs",

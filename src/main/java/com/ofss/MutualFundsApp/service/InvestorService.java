@@ -36,7 +36,7 @@ public class InvestorService {
         Investor investor = investorRepo.findOne(investorId);
         MutualFund fund = mfRepo.findOne(fundId);
 
-        if (investor != null) {
+        if (investor != null && fund != null) {
             investor.getInvestments().add(fundId);
             return investorRepo.save(investor);
         }

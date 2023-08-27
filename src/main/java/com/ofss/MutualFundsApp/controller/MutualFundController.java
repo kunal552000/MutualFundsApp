@@ -1,13 +1,17 @@
 package com.ofss.MutualFundsApp.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ofss.MutualFundsApp.model.MutualFund;
 import com.ofss.MutualFundsApp.payload.MutualFundDTO;
 import com.ofss.MutualFundsApp.service.MutualFundService;
 
@@ -26,6 +30,11 @@ public class MutualFundController {
 		else
 		return new ResponseEntity<>("Cannot add this mutual fund",HttpStatus.NOT_FOUND);
 	}
+	
+	 @GetMapping("/viewAllMutualFunds")
+	    public List<MutualFund> getAllMutualFunds() {
+	        return mfservice.getAllMutualFunds();
+	    }
 	
 	
 	

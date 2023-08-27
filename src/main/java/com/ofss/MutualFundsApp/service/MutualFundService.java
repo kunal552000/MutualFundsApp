@@ -27,22 +27,22 @@ public class MutualFundService {
 	
 	public boolean checkvalidMF(MutualFundDTO mfDTO)
 	{
-		System.out.println("Inside mfDTO" + mfDTO.getIncludedShares().toString());
-		for(SharesRequest s : mfDTO.getIncludedShares())
-		{
-			System.out.println("ShareId is " + s.getShareId());
-		}
+//		System.out.println("Inside mfDTO" + mfDTO.getIncludedShares().toString());
+//		for(SharesRequest s : mfDTO.getIncludedShares())
+//		{
+//			System.out.println("ShareId is " + s.getShareId());
+//		}
 		List<Shares> existingShares = sharesRepo.findAllById(
 		        mfDTO.getIncludedShares().stream()
 	            .map(SharesRequest::getShareId)
 	            .collect(Collectors.toList())
 	    );
 		
-		for(Shares s : existingShares)
-		{
-			System.out.println("Inside existing shares " + s.getShareId());
-		//	mfRepo.save(entities)
-		}
+//		for(Shares s : existingShares)
+//		{
+//			System.out.println("Inside existing shares " + s.getShareId());
+//		//	mfRepo.save(entities)
+//		}
 			
 		
 		MutualFund mutualFund = new MutualFund();
@@ -61,6 +61,10 @@ public class MutualFundService {
 			return false;
 		}
 	}
+	
+	public List<MutualFund> getAllMutualFunds() {
+        return (List<MutualFund>) mfRepo.findAll();
+    }
 	
 	private void calculateAndSetValues(List<SharesRequest> includedShares, List<Shares> existingShares,MutualFund mutualFund) {
 	    float totalValue = 0;
